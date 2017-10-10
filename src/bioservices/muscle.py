@@ -22,7 +22,7 @@
 .. topic:: What is MUSCLE ?
 
     :URL: http://www.drive5.com/muscle/
-    :service: http://www.ebi.ac.uk/Tools/webservices/services/msa/muscle_rest
+    :service: https://www.ebi.ac.uk/Tools/webservices/services/msa/muscle_rest
 
     .. highlights::
 
@@ -46,7 +46,7 @@ __all__ = ["MUSCLE"]
 
 
 class MUSCLE(REST):
-    """Interface to the `MUSCLE <http://www.ebi.ac.uk/Tools/webservices/services/msa/muscle_rest>`_ service.
+    """Interface to the `MUSCLE <https://www.ebi.ac.uk/Tools/webservices/services/msa/muscle_rest>`_ service.
 
     ::
 
@@ -76,7 +76,7 @@ class MUSCLE(REST):
 
     """
 
-    _url = "http://www.ebi.ac.uk/Tools/services/rest/muscle"
+    _url = "https://www.ebi.ac.uk/Tools/services/rest/muscle"
     def __init__(self, verbose=True):
         super(MUSCLE, self).__init__(name='MUSCLE', 
                 url=MUSCLE._url, verbose=verbose)
